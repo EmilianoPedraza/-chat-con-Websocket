@@ -1,0 +1,35 @@
+<h2 class="text-warning text-center">Formulario</h2>
+<div class="d-flex flex-column justify-content-center align-items-center">
+  <form
+    action="/productos"
+    method="post"
+    class="border border-warning rounded p-2"
+  >
+    <div class="mb-3">
+      <label for="title" class="form-label text-white">Titulo del producto</label>
+      <input
+        type="text"
+        class="form-control"
+        id="title"
+        name="title"
+        aria-describedby="emailHelp"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="price" class="form-label text-white">Precio de producto</label>
+      <input type="text" class="form-control" id="price" name="price" />
+      <div id="emailHelp" class="form-text">Ingrese solo números, para valores
+        decimales utilize "." en vez de "," de lo contrario se retornara un
+        error del servidor...</div>
+    </div>
+    <div class="mb-3">
+      <label class="form-label text-white" for="thumbnail">link de foto de
+        Producto</label>
+      <input type="text" class="form-control" id="thumbnail" name="thumbnail" />
+    </div>
+    <button type="submit" class="btn btn-warning">enviar</button>
+  </form>
+  <div onClick="stopPropagation">
+    <a href="/productos" class="btn btn-secondary">Ver Lista de productos</a>
+  </div>
+</div>
