@@ -29,9 +29,9 @@ io.on("connection", (socket)=>{
     productos.save(prod)
     io.sockets.emit("actualizacionPrd", prod)
   })
+  //apartado del chat
+
 })
-// app.use(express.json());
-// app.use(express.urlencoded({ extended: true }));
 //==============================================================================================
 //ruta de carpeta public con index.html
 app.use(express.static(publicRoute))

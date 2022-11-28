@@ -30,7 +30,7 @@ const listProdcuts = (arrayProductos) => {
                        </table>
                    </div>
                </div>`
-         const productos = arrayProductos.forEach((prod)=>{
+         arrayProductos.forEach((prod)=>{
             productoHtml(prod)
          })
          
