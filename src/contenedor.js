@@ -53,6 +53,10 @@ class Contenedor {
   }
 }
 
-const productos = new Contenedor([]);
+const productos = new Contenedor([{
+  title: "zapatillas puma",
+  price: 1000000,
+  thumbnail: "https://sporting.vtexassets.com/arquivos/ids/610015-800-800?v=637968794926400000&width=800&height=800&aspect=true"
+}]);
 
 exports.productos = productos;
