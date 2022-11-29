@@ -47,6 +47,13 @@
             <h2 class="text-warning text-center">
                 centro de Mensajes
             </h2>
+            <form onsubmit="return addMessage(this)">
+                <input type="text" placeholder="nombre de usuario" id="username">
+                <input type="email" placeholder="ingrese corrego electronico" id="email">
+                <input type="text" placeholder="mensaje..." id="mensaje">
+                <input type="submit" value="Enviar">
+            </form>
+            <div id="mensajes"></div>
         </div>
         <div class="listaProductos">
             <h2 class="text-warning text-center">Lista de Productos</h2>
