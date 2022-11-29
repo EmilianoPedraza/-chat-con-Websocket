@@ -42,7 +42,7 @@ const addProduct=(ev)=>{
     const newProd = {
         title : document.querySelector("#title").value,
         price: document.querySelector("#price").value,
-        thumbnail: document.querySelector("#thumbnail")
+        thumbnail: document.querySelector("#thumbnail").value
     }
     socket.emit("nuevoProducto", newProd)
 }
