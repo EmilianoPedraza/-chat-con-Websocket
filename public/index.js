@@ -12,6 +12,7 @@ const productoHtml = (prod)=>{
 
 const listProdcuts = (arrayProductos) => {
     const listaProductos = document.querySelector(".listaProductos");
+
     const h3mensaje = document.createElement("h3")
     h3mensaje.innerText = "no hay productos</h3"
     h3mensaje.className = "text-light text-center notProducts"
@@ -30,11 +31,12 @@ const listProdcuts = (arrayProductos) => {
                        </table>
                    </div>
                </div>`
-         arrayProductos.forEach((prod)=>{
+         const productos = arrayProductos.forEach((prod)=>{
             productoHtml(prod)
          })
          
     }
+
 };
 
 
