@@ -1,3 +1,4 @@
+const { emit } = require("nodemon");
 
 socket = io();
 const productoHtml = (prod)=>{
@@ -40,7 +41,6 @@ const listProdcuts = (arrayProductos) => {
     else{
         listaProductos.appendChild(h3mensaje)
     }
-
 };
 
 
@@ -60,4 +60,13 @@ socket.on("actualizacionPrd", producto=>{
 socket.on("canalProductos", productos=>{
     listProdcuts(productos)
 })
+//apartado de chat
 
+const addMessage = (ev)=>{
+    socket.emit("nuevoMensaje", {
+        usuario: document.querySelector("#username").value,
+        email: document.querySelector("#email").value,
+        mensaje: document.querySelector("#mensaje").value
+    })
+    return false
+}
